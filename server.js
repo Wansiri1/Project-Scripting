@@ -226,7 +226,7 @@ app.get('/examTitle', (req, res) => {
     }
 
     // ตรวจสอบว่ามีผลลัพธ์หรือไม่
-    if (!results || results.length === 0) {
+    if (!results || results.length === 0) { 
       return res.status(404).json({ message: 'No exam titles found' });
     }
 
